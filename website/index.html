@@ -1,64 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Brandon Hach" />
+		<meta
+			name="description"
+			content="This page contains all the things I am learning how to create as I learn HMTL."
+		/>
+		<title>My First Webpage</title>
+		<link rel="icon" href="html5.png" type="image/x-icon" />
+		<link rel="stylesheet" href="main.css" type="text/css" />
+		<!-- https://loremipsum.io/
+				https://unsplash.com/ -->
+	</head>
 
-<head>
-    <meta charset="UTF-8"> 
-    <meta name="author" content="Brandon Hach">
-    <meta name="description" content="This page contains all the things I am learning how to create as I learn HMTL.">
-    <title>My First Webpage</title>
-    <link rel="icon" href="html5.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
-</head>
+	<body>
+		<header>
+			<h1>My Goals for the Year</h1>
 
-<body>
-    <h1>Hello World!</h1>
+			<hr />
 
-    <hr>
+			<nav aria-label="primary-navigation">
+				<ul>
+					<li>
+						<a href="#html">Learning HTML</a>
+					</li>
+					<li>
+						<a href="#vacation">Planning a Vacation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <h2>I'm ready to Learn HTML</h2>
-    <p>This is my first webpage.</p>
+		<hr />
+		<main>
+			<article id="html">
+				<h2>I'm ready to Learn HTML</h2>
+				<p>This is my first webpage.</p>
+				<section>
+					<h3>HTML5</h3>
+					<img
+						src="img/html_logo_300x300.png"
+						alt="HTML5 Logo"
+						title="I am learning HTML5"
+						height="300"
+						width="300"
+					/>
+					<figure>
+						<figcaption>A Example of HTML5 code</figcaption>
+						<p>
+							<code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+						</p>
+					</figure>
+				</section>
+				<section>
+					<h3>My Daily Schedule</h3>
+					<p>Let me tell you how I...</p>
+					<ol>
+						<li>... I learned more about web dev.</li>
+						<li>... I planned out my schedule.</li>
+						<li>
+							... I used resources from
+							<abbr title="Mozilla Developer Network"
+								><a href="https://developer.mozilla.org/">MDN</a></abbr
+							>
+						</li>
+					</ol>
+					<aside>
+						<details>
+							<summary>Guess the <mark>number of hours</mark> I code per day</summary>
+							<p>
+								I start at <time datetime="08:00">8 am</time> and I write code for
+								<time datetime="PT3H">3 hours</time> every morning.
+							</p>
+						</details>
+					</aside>
+				</section>
+			</article>
 
-    <h3>My Daily Schedule</h3>
-    <p>Let me tell you how I...</p>
-    <ol>
-        <li>... I learned more about web dev.</li>
-        <li>... I planned out my schedule.</li>
-        <li>... I used resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/">MDN</a></abbr><li>
-    </ol>
+			<hr />
 
-    <hr>
+			<article id="vacation">
+				<h2>I Am Also Planning a Vacation</h2>
+				<p>I've been working hard and <em>really need a getaway.</em></p>
+				<p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
-    <h2>I Am Also Planning a Vacation</h2>
-    <p>I've been working hard and <em>really need a getaway.</em></p>
-    <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+				<section>
+					<h3>Place I'd Liked to Visit</h3>
+					<ul>
+						<li>
+							<p>I've heard good things about the Caribbean.</p>
+							<figure>
+								<img
+									src="img/caribbean.jpg"
+									alt="Caribbean Beach"
+									title="I want to visit a Caribbean beach."
+									width="400"
+									height="225"
+									loading="lazy"
+								/>
+								<figcaption>Carribean Beach Getaway</figcaption>
+							</figure>
+						</li>
+						<li>
+							<p>I've heard good things about going here:</p>
+							<address>
+								Margaritaville Island Reserve Riviera Cancún<br />
+								Bahia Petempich Puerto Morelos, Mexico<br />
+								Colonia Morelos, México 77580
+							</address>
+							<figure>
+								<img
+									src="img/vacation.jpg"
+									alt="Cancún Vacation"
+									title="It's 5 o'Clock Somewhere!"
+									loading="lazy"
+									height="267"
+									width="400"
+								/>
+								<figcaption>A Caribbean Vacation Image</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section>
+				<!-- TODO: Add more places -->
+				<section>
+					<h3>Places I'd Want to Avoid.</h3>
+					<dl>
+						<dt>North Pole</dt>
+						<dd>I hear this is <strong>cold</strong>!</dd>
 
-    <h3>Place I'd Liked to Visit</h3>
-    <ul>
-    <li><p>I've heard good things about the Caribbean.</p></li>
-    <li><p>I've heard good things about going here:</p>
-    <address>
-        Margaritaville Island Reserve Riviera Cancún<br>
-        Bahia Petempich Puerto Morelos, Mexico<br>
-        Colonia Morelos, México 77580
-    </address>
-</li>
-</ul>
+						<dt>South Pole</dt>
+						<dd>This is also cold.</dd>
 
-    <!-- TODO: Add more places -->
-    <h3>Places I'd Want to Avoid.</h3>
-    <dl>
-        <dt>North Pole</dt>
-        <dd>I hear this is <strong>cold</strong>!</dd>'
-        
-        <dt>South Pole</dt>
-        <dd>This is also cold.</dd>
-
-        <dt>Mountain Tops</dt>
-        <dd>These are also cold.</dd>
-    </dl>
-
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Brandon Hach</a> &gt;&gt;&gt;
-</body>
-
+						<dt>Mountain Tops</dt>
+						<dd>These are also cold.</dd>
+					</dl>
+				</section>
+			</article>
+		</main>
+		<hr />
+		<footer>
+			<p>&lt;&lt;&lt; &copy; <a href="about.html">Brandon Hach</a> &gt;&gt;&gt;</p>
+			<p>
+				<a href="#">Back to Top</a>
+			</p>
+		</footer>
+	</body>
 </html>
